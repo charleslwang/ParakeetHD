@@ -15,6 +15,8 @@ Our results show that **HD-specific adaptation** gives the strongest overall per
 
 ## Models
 
+Models can be found here: https://huggingface.co/collections/charleslwang/parakeethd
+
 - **Parakeet-HD**
 - **Parakeet-HD-Prosody**
 - **Parakeet-HD-Phonation**
