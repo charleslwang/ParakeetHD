@@ -1,0 +1,64 @@
+[
+  {
+    "label": "Parakeet-HD",
+    "family": "parakeet",
+    "mode": "peft",
+    "model_id": "nvidia/parakeet-tdt-0.6b-v2",
+    "adapter_repo_id": "charleslwang/parakeet-tdt-0.6b-HD",
+    "adapter_filename": "best_adapter.pt"
+  },
+  {
+    "label": "Parakeet-HD-Prosody",
+    "family": "parakeet",
+    "mode": "peft",
+    "model_id": "nvidia/parakeet-tdt-0.6b-v2",
+    "adapter_repo_id": "charleslwang/parakeet-tdt-0.6b-HD-prosody",
+    "adapter_filename": "best_adapter.pt"
+  },
+  {
+    "label": "Parakeet-HD-Phonation",
+    "family": "parakeet",
+    "mode": "peft",
+    "model_id": "nvidia/parakeet-tdt-0.6b-v2",
+    "adapter_repo_id": "charleslwang/parakeet-tdt-0.6b-HD-phonation",
+    "adapter_filename": "best_adapter.pt"
+  },
+  {
+    "label": "Parakeet-HD-Articulation",
+    "family": "parakeet",
+    "mode": "peft",
+    "model_id": "nvidia/parakeet-tdt-0.6b-v2",
+    "adapter_repo_id": "charleslwang/parakeet-tdt-0.6b-HD-articulation",
+    "adapter_filename": "best_adapter.pt"
+  },
+  {
+    "label": "Whisper-small",
+    "family": "whisper",
+    "model_id": "openai/whisper-small"
+  },
+  {
+    "label": "Whisper-medium",
+    "family": "whisper",
+    "model_id": "openai/whisper-medium"
+  },
+  {
+    "label": "Whisper-large-v2",
+    "family": "whisper",
+    "model_id": "openai/whisper-large-v2"
+  },
+  {
+    "label": "Parakeet-TDT-0.6B",
+    "family": "parakeet",
+    "mode": "baseline",
+    "model_id": "nvidia/parakeet-tdt-0.6b-v2"
+  },
+  {
+    "label": "meta-omni-ctc-300m",
+    "family": "omnilingual",
+    "mode": "baseline",
+    "model_card": "omniASR_CTC_300M",
+    "params_m": 325.5,
+    "trial": "trial0",
+    "lang": "eng_Latn"
+  }
+]

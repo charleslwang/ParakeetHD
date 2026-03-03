@@ -1,0 +1,1 @@
+pip install --upgrade --extra-index-url https://download.pytorch.org/whl/cu128 torch torchvision torchaudio pytorch-lightning 'nemo-toolkit[asr]==2.7.0' lhotse omegaconf huggingface_hub wandb numpy pandas tqdm soundfile librosa opensmile praat-parselmouth jiwer evaluate datasets transformers peft safetensors sentencepiece bitsandbytes
