@@ -1,6 +1,7 @@
 # ParakeetHD: Huntington Disease ASR Model Suite
 
-Official repository for the paper **"Towards Robust Automatic Speech Recognition for Huntington Disease."**
+Official repository for the paper **"Huntington Disease Automatic Speech Recognition with Biomarker
+Supervision."**
 
 ## Summary
 
