@@ -22,3 +22,16 @@ Models can be found here: https://huggingface.co/collections/charleslwang/parake
 - **Parakeet-HD-Prosody**
 - **Parakeet-HD-Phonation**
 - **Parakeet-HD-Articulation**
+
+## Citation
+
+If you use this repository or the released models, please cite:
+
+```bibtex
+@article{wang2026huntington,
+  title={Huntington Disease Automatic Speech Recognition with Biomarker Supervision},
+  author={Wang, Charles L. and Chen, Cady and Gong, Ziwei and Hirschberg, Julia},
+  journal={arXiv preprint arXiv:2603.11168},
+  year={2026},
+  url={https://arxiv.org/abs/2603.11168}
+}
