@@ -55,5 +55,5 @@ If you use this repository or the released models, please cite our paper:
   author={Wang, Charles L. and Chen, Cady and Gong, Ziwei and Hirschberg, Julia},
   journal={arXiv preprint arXiv:2603.11168},
   year={2026},
-  url={[https://arxiv.org/abs/2603.11168](https://arxiv.org/abs/2603.11168)}
+  url={https://arxiv.org/abs/2603.11168}
 }
