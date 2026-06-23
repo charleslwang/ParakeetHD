@@ -45,6 +45,105 @@ All models in the suite are hosted in our [Hugging Face Collection](https://hugg
 
 ---
 
+## 🍎 Core ML export
+
+The Hugging Face ParakeetHD repositories contain NeMo encoder adapters rather
+than complete standalone checkpoints. The deployment scripts reconstruct the
+model from the NVIDIA base checkpoint and adapter before producing two Core ML
+ML Program packages:
+
+```text
+coreml-export/
+  bundle.json
+  tokens.txt
+  models/
+    ParakeetEncoder.mlpackage/
+    ParakeetDecoderJoint.mlpackage/
+  validation/
+    manifest.json
+    *.npz
+```
+
+Create a dedicated environment on a Mac and install the deployment
+dependencies:
+
+```bash
+python3.12 -m venv .venv-coreml
+source .venv-coreml/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-coreml.txt
+```
+
+Export the baseline Parakeet-HD adapter:
+
+```bash
+python deployment/export_coreml.py --clean
+```
+
+The exporter defaults to:
+
+- base model: `nvidia/parakeet-tdt-0.6b-v2`
+- adapter: `charleslwang/parakeet-tdt-0.6b-HD/best_adapter.pt`
+- target: iOS 17 ML Program with float32 compute precision
+- waveform input: mono float32 audio at the model's configured sample rate
+- flexible chunk duration: 0.25–30 seconds
+
+Float16 export is available for smaller/faster experimental bundles, but it
+should be revalidated carefully:
+
+```bash
+python deployment/export_coreml.py --precision float16 --clean
+```
+
+Local adapter files and alternate ParakeetHD variants are also supported:
+
+```bash
+python deployment/export_coreml.py \
+  --adapter-source ./checkpoints/best_adapter.pt \
+  --output-dir ./coreml-export \
+  --clean
+```
+
+If Core ML reports an unsupported waveform preprocessing or STFT operation,
+export the acoustic encoder alone:
+
+```bash
+python deployment/export_coreml.py \
+  --encoder-input features \
+  --output-dir ./coreml-export \
+  --clean
+```
+
+In feature-input mode, `bundle.json` includes the NeMo preprocessor
+configuration that must be reproduced by the Swift audio pipeline.
+
+Validate both Core ML subnetworks against the PyTorch outputs captured during
+export. Core ML prediction validation must run on macOS:
+
+```bash
+python deployment/validate_coreml.py \
+  --bundle ./coreml-export/bundle.json
+```
+
+Publishing the hosted Core ML bundle is a maintainer-only step and is not part
+of the public repository. Do not commit Hugging Face tokens, generated
+`coreml-export/` folders, or `.mlpackage` artifacts to git.
+
+The uploaded `bundle.json` is the native client's contract. It records the
+actual Core ML feature names, example tensor shapes, tokenizer location, sample
+rate, blank token, and TDT duration metadata. A Swift app does not use NeMo or
+`model_config.yaml` after these artifacts have been exported.
+
+> [!NOTE]
+> Core ML conversion support depends on the exact PyTorch, NeMo, and
+> `coremltools` versions. If conversion of the waveform preprocessor fails on
+> an unsupported audio/STFT operation, the exporter preserves its TorchScript
+> intermediates; retry with `--encoder-input features` and move preprocessing
+> into Swift. Never publish a bundle that has not
+> passed `validate_coreml.py` and end-to-end transcription testing.
+
+---
+
 ## 📝 Citation
 
 If you use this repository or the released models, please cite our paper:

@@ -1,0 +1,22 @@
+# Python/local environments
+__pycache__/
+.venv/
+.venv-*/
+
+# Local secrets and Hugging Face credentials
+.env
+.env.*
+.hf_token
+.huggingface-token
+huggingface_token
+huggingface_token.txt
+hf_token.txt
+
+# Maintainer-only upload helper. Export/validation are public; publishing is not.
+deployment/publish_coreml.py
+
+# Large generated deployment artifacts
+coreml-export/
+*.mlmodel/
+*.mlmodelc/
+*.mlpackage/
