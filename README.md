@@ -64,6 +64,17 @@ coreml-export/
     *.npz
 ```
 
+You can either build these Core ML artifacts locally with the scripts below or
+download the validated prebuilt bundle from Hugging Face:
+
+```text
+https://huggingface.co/charleslwang/parakeet-tdt-0.6b-HD/tree/main/coreml
+```
+
+Native clients should treat `coreml/bundle.json` as the entry point. It points
+to the two `.mlpackage` models and records the tokenizer, audio shape, sample
+rate, blank token, and TDT duration metadata needed by the app runtime.
+
 Create a dedicated environment on a Mac and install the deployment
 dependencies:
 
