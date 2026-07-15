@@ -164,7 +164,7 @@ public final class ParakeetRuntime {
                 frame += skip
                 needLoop = skip == 0
             }
-            if lastSkip == 0 || symbols >= options.maxSymbolsPerFrame {
+            if lastSkip == 0 {
                 frame += 1
             }
         }

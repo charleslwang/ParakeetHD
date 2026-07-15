@@ -510,6 +510,11 @@ def main() -> int:
         decoder_example = model.decoder.input_example(max_batch=1, max_dim=1)
         initial_states = decoder_example[-1]
         initial_states = tuple(state.to(device=device, dtype=torch.float32) for state in initial_states)
+    if any(not torch.allclose(state, torch.zeros_like(state)) for state in initial_states):
+        raise RuntimeError(
+            "Decoder input_example() returned non-zero initial states. "
+            "Update the bundle format and Swift runtime to load explicit initial states."
+        )
     encoder_channels = int(encoder_outputs[0].shape[1])
     decoder_inputs = (
         torch.randn(1, encoder_channels, 1, dtype=torch.float32, device=device) * 0.01,
@@ -602,6 +607,7 @@ def main() -> int:
         },
         "tokenizer": {"type": "bpe", "tokens_path": "tokens.txt", "tokens_count": len(tokens)},
         "decoding": decoding,
+        "decoder_initial_state": {"type": "zeros"},
         "coreml": {
             "minimum_ios": args.ios_target,
             "compute_precision": args.precision,

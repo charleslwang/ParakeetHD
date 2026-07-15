@@ -37,6 +37,11 @@ swift run parakeet-transcribe \
 The CLI uses `AVAudioFile`/`AVAudioConverter` to load and resample local audio
 to the sample rate recorded in `bundle.json`.
 
+Waveform-input bundles are exported with bounded flexible input shapes. The
+default exporter supports 0.25 to 30 seconds of mono audio. Apps that need
+longer files or continuous recording should chunk audio before calling the
+runtime.
+
 ## Library Use
 
 ```swift
@@ -67,6 +72,7 @@ Application-level responsibilities:
 - On-device validation on target iPhones.
 - Transcript parity testing against `deployment/validate_transcription.py`.
 - UI/audio session integration for recording or file import.
+- Chunking or streaming for audio longer than the bundle's exported maximum.
 - User consent, local storage, privacy, and product-specific workflows.
 - Feature-input support with exact Swift log-mel preprocessing parity.
 - Tokenizer parity tests if a future tokenizer requires more than `tokens.txt`.

@@ -98,6 +98,8 @@ rate, blank token, and TDT duration metadata needed by the app runtime.
 > runtime for waveform-input Core ML bundles. A native app must still add
 > its own UI/audio-session integration and on-device validation. Feature-input bundles
 > still require exact Swift log-mel preprocessing parity.
+> The default waveform-input export accepts 0.25–30 seconds of audio; apps
+> that need longer recordings should add chunking or streaming.
 
 Create a dedicated environment on a Mac and install the deployment
 dependencies:

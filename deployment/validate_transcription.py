@@ -191,7 +191,7 @@ class CoreMLTDTGreedyDecoder:
                 frame += skip
                 need_loop = skip == 0
 
-            if last_skip == 0 or symbols >= max_symbols_per_frame:
+            if last_skip == 0:
                 frame += 1
 
         return detokenize(token_ids, self.tokens)

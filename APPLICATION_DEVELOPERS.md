@@ -99,3 +99,12 @@ parity before calling the encoder.
 The runtime is deliberately UI-free. It is suitable for apps with very
 different surfaces: clinical tools, research data collection, accessibility
 workflows, batch transcription utilities, or internal demos.
+
+## Audio Length
+
+The default waveform-input export accepts mono audio from 0.25 to 30 seconds,
+as recorded in `bundle.json`. Applications that need longer recordings,
+continuous microphone transcription, or clinical interviews should segment
+audio into supported chunks or build a streaming layer around the runtime.
+Do not pass recordings longer than the exported maximum directly to the
+encoder.

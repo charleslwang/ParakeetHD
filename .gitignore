@@ -2,6 +2,13 @@
 __pycache__/
 .venv/
 .venv-*/
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+ios/.build/
+ios/.swiftpm/
 
 # Local secrets and Hugging Face credentials
 .env
