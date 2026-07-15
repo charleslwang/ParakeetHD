@@ -1,0 +1,541 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ParakeetRuntime-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/sources",
+      "importPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/AudioLoader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/BundleConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/MLMultiArray+Parakeet.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetCoreMLModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetRuntime.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetTokenizer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ParakeetRuntime",
+      "moduleOutputPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules/ParakeetRuntime.swiftmodule",
+      "objects" : [
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/AudioLoader.swift.o",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/BundleConfig.swift.o",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/MLMultiArray+Parakeet.swift.o",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetCoreMLModel.swift.o",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetError.swift.o",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetRuntime.swift.o",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetTokenizer.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/include/ParakeetRuntime-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios"
+      ],
+      "outputFileMapPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/AudioLoader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/BundleConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/MLMultiArray+Parakeet.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetCoreMLModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetRuntime.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetTokenizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules/ParakeetRuntime.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/AudioLoader.swift",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/BundleConfig.swift",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/MLMultiArray+Parakeet.swift",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetCoreMLModel.swift",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetError.swift",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetRuntime.swift",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetTokenizer.swift"
+      ],
+      "tempsPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ParakeetTranscribe-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/sources",
+      "importPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetTranscribe/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules/ParakeetRuntime.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "ParakeetTranscribe",
+      "moduleOutputPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules/ParakeetTranscribe.swiftmodule",
+      "objects" : [
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "ParakeetTranscribe_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "ios"
+      ],
+      "outputFileMapPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules/ParakeetTranscribe.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetTranscribe/main.swift"
+      ],
+      "tempsPath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ParakeetRuntime" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ParakeetRuntime",
+      "-package-name",
+      "ios",
+      "-c",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/AudioLoader.swift",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/BundleConfig.swift",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/MLMultiArray+Parakeet.swift",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetCoreMLModel.swift",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetError.swift",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetRuntime.swift",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetTokenizer.swift",
+      "-I",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/include/ParakeetRuntime-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ParakeetTranscribe" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ParakeetTranscribe",
+      "-package-name",
+      "ios",
+      "-c",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetTranscribe/main.swift",
+      "-I",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "ParakeetTranscribe_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "ios",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ParakeetRuntime" : [
+
+    ],
+    "ParakeetTranscribe" : [
+      "ParakeetRuntime"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/AudioLoader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/BundleConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/MLMultiArray+Parakeet.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetCoreMLModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetRuntime.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetRuntime/ParakeetTokenizer.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/sources"
+    },
+    "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetTranscribe/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/sources"
+    },
+    "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/parakeet-transcribe-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/parakeet-transcribe-entitlement.plist"
+    },
+    "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/parakeet-transcribe.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/AudioLoader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/BundleConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/MLMultiArray+Parakeet.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetCoreMLModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetRuntime.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetRuntime.build/ParakeetTokenizer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/parakeet-transcribe.product/Objects.LinkFileList"
+    },
+    "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

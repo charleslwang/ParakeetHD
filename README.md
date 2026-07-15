@@ -15,6 +15,7 @@
 ## 📌 Quick Links
 - [Summary](#-summary)
 - [Models](#-models)
+- [Building applications](#-building-applications)
 - [Citation](#-citation)
 
 ---
@@ -42,6 +43,22 @@ All models in the suite are hosted in our [Hugging Face Collection](https://hugg
 | **Parakeet-HD-Prosody** | Prosodic Biomarkers | [View Model](https://huggingface.co/charleslwang/parakeet-tdt-0.6b-HD-prosody) |
 | **Parakeet-HD-Phonation** | Phonatory Biomarkers | [View Model](https://huggingface.co/charleslwang/parakeet-tdt-0.6b-HD-phonation) |
 | **Parakeet-HD-Articulation**| Articulatory Biomarkers | [View Model](https://huggingface.co/charleslwang/parakeet-tdt-0.6b-HD-articulation) |
+
+---
+
+## 🧩 Building applications
+
+This repository is structured so developers can build their own applications
+with ParakeetHD without starting from model internals. The intended contract is:
+
+1. Export or download a Core ML bundle.
+2. Treat `bundle.json` as the model/runtime entry point.
+3. Embed the Swift Package in `ios/` or port its runtime logic to another
+   native stack.
+4. Build your own app UI, audio workflow, deployment policy, and validation.
+
+See [APPLICATION_DEVELOPERS.md](APPLICATION_DEVELOPERS.md) for the integration
+guide.
 
 ---
 
@@ -74,6 +91,13 @@ https://huggingface.co/charleslwang/parakeet-tdt-0.6b-HD/tree/main/coreml
 Native clients should treat `coreml/bundle.json` as the entry point. It points
 to the two `.mlpackage` models and records the tokenizer, audio shape, sample
 rate, blank token, and TDT duration metadata needed by the app runtime.
+
+> [!IMPORTANT]
+> The public repository provides export, tensor validation, experimental
+> transcription parity checking, benchmark utilities, and a Swift Package
+> runtime for waveform-input Core ML bundles. A native app must still add
+> its own UI/audio-session integration and on-device validation. Feature-input bundles
+> still require exact Swift log-mel preprocessing parity.
 
 Create a dedicated environment on a Mac and install the deployment
 dependencies:
@@ -136,6 +160,41 @@ python deployment/validate_coreml.py \
   --bundle ./coreml-export/bundle.json
 ```
 
+Run an experimental end-to-end transcription parity check on real WAVs. The
+manifest can use either `audio` or `audio_filepath` plus `text` fields:
+
+```bash
+python deployment/validate_transcription.py \
+  --bundle ./coreml-export/bundle.json \
+  --manifest ./pipeline/manifests/plain/test.jsonl \
+  --limit 8 \
+  --report ./coreml-export/validation/e2e_report.json
+```
+
+This script is intentionally stricter than the tensor validator: it returns a
+non-zero exit code if normalized NeMo and Core ML transcripts differ. It
+currently supports waveform-input bundles. Feature-input bundles require an
+independent preprocessing parity implementation before full transcription
+validation is meaningful.
+
+Measure local Core ML package size and prediction latency:
+
+```bash
+python deployment/benchmark_coreml.py \
+  --bundle ./coreml-export/bundle.json \
+  --report ./coreml-export/validation/benchmark_report.json
+```
+
+Build and try the Swift runtime CLI:
+
+```bash
+cd ios
+swift build
+swift run parakeet-transcribe \
+  --bundle ../coreml-export/bundle.json \
+  --audio /path/to/audio.wav
+```
+
 Publishing the hosted Core ML bundle is a maintainer-only step and is not part
 of the public repository. Do not commit Hugging Face tokens, generated
 `coreml-export/` folders, or `.mlpackage` artifacts to git.
@@ -151,7 +210,10 @@ rate, blank token, and TDT duration metadata. A Swift app does not use NeMo or
 > an unsupported audio/STFT operation, the exporter preserves its TorchScript
 > intermediates; retry with `--encoder-input features` and move preprocessing
 > into Swift. Never publish a bundle that has not
-> passed `validate_coreml.py` and end-to-end transcription testing.
+> passed `validate_coreml.py`, end-to-end transcription testing, and practical
+> device benchmarks. The default float32 export is primarily a parity target;
+> float16 and additional compression should be evaluated before treating a
+> bundle as suitable for iPhone deployment.
 
 ---
 

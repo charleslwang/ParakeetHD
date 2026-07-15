@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/primary.swiftdeps"
+  },
+  "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/Sources/ParakeetTranscribe/main.swift": {
+    "dependencies": "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.d",
+    "object": "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.swift.o",
+    "swiftmodule": "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.swiftdeps",
+    "diagnostics": "/Users/charleslwang/Desktop/Aquarium/Cave/ParakeetHD/ios/.build/arm64-apple-macosx/debug/ParakeetTranscribe.build/main.dia"
+  }
+}
